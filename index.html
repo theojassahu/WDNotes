@@ -5,28 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDNotes</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="http://drive.google.com/uc?export=view&id=1TJWAqK1TQ4h_1kkAr5JQUbxtuTHEHsdb" type="image/x-icon">
-    <style>
-      .logo{ 
-border-radius: 50%;
-width: 3%;
-}
-    </style>
 </head>
 <body>
-    <header class="text-gray-600 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-      </svg>
-      <span class="ml-3 text-xl">WDN</span>
-    </a>
-    <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-gray-900" href="index.html">HOME</a>
-    </nav>
-  </div>
-</header>
+  <nav>
+    <div class="nav-bar">
+        <i class='bx bx-menu sidebarOpen' ></i>
+        <span class="logo navLogo"><a>WDNotes</a></span>
+
+        <div class="menu">
+            <div class="logo-toggle">
+                <span class="logo"><a>WDNotes</a></span>
+                <i class='bx bx-x siderbarClose'></i>
+            </div>
+        </div>
+        <div class="darkLight-searchBox">
+            <div class="dark-light">
+                <i class='bx bx-moon moon'></i>
+                <i class='bx bx-sun sun'></i>
+            </div>
+            </div>
+        </div>
+    </div>
+</nav>
 
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
@@ -63,7 +65,7 @@ width: 3%;
             </div>
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
               <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="content" class="object-cover object-center h-full w-full" src="https://cdn.dribbble.com/users/4924661/screenshots/14090643/media/ec1d5bb9cdb1e8c4e6c3ecb93a6d8cec.png">
+                <img alt="content" class="object-cover object-center h-full w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUhdFgKwWT0BD32WAPhBz04H7yjV1VMu7axw&usqp=CAU">
               </div>
               <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Javascript notes</h2>
               <a class="text-indigo-500 inline-flex items-center mt-3" href="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/notes/JS_Chapterwise_Notes.pdf" download="js notes">Download
@@ -75,5 +77,6 @@ width: 3%;
           </div>
         </div>
       </section>
+      <script src="script.js"></script>
 </body>
 </html>
